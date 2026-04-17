@@ -343,7 +343,7 @@ async function renderCanvas(
   canvas.width = Math.floor(viewport.width);
   canvas.height = Math.floor(viewport.height);
   const ctx = canvas.getContext("2d")!;
-  await page.render({ canvasContext: ctx, viewport, canvas }).promise;
+  await page.render({ canvasContext: ctx, viewport }).promise;
   return { canvas };
 }
 
